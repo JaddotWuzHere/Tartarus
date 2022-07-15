@@ -15,7 +15,7 @@ Tartarus was made possible only through the help and support from the Polyhedral
 ## Installing this pack
 > Currently, you are only able to use this on Bukkit. While you technically *could* install this on other platforms, you have no option to generate this in the Nether. If you want to use this pack on Fabric, Forge, or other supported platforms, and you don't mind having Nether terrain in the Overworld, feel free to use this pack.
 
-Simply install this pack like any other Terra generation pack. Simply add these lines to the end of `Bukkit.yml`. However, rather than specifying the pack to generate in `world`, you would insert `world_nether`:
+Simply install this pack like any other Terra generation pack. Simply add these lines to the end of `Bukkit.yml`. The ID of the pack is `TARTARUS`. However, rather than specifying the pack to generate in `world`, you would insert `world_nether`:
 
 ```
 worlds:
