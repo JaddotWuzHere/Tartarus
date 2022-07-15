@@ -12,7 +12,15 @@ Tartarus currently does not include any naturally generating ores and may contai
 ## Credits
 Tartarus was made possible only through the help and support from the PolyhedralDev team, as well as the default Overworld config packaged with Terra, which some edited configs can be found in various assets in Tartarus. You can check out the pack here: https://github.com/PolyhedralDev/TerraOverworldConfig
 
-##Installing this pack
+## Installing this pack
 > Currently, you are only able to use this on Bukkit. While you technically *could* install this on other platforms, you have no option to generate this in the Nether. If you want to use this pack on Fabric, Forge, or other supported platforms, and you don't mind having Nether terrain in the Overworld, feel free to use this pack.
 
-Simply install this pack like any other. However, instead of 
+Simply install this pack like any other Terra generation pack. However, instead of specifying the pack to generate in `world`, you would put `world_nether` instead:
+
+```
+worlds:
+  world_nether:
+    generator: Terra:TARTARUS
+```
+
+Obviously, if your Nether world name is named something different, you would rename it to that instead.
