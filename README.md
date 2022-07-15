@@ -15,7 +15,7 @@ Tartarus was made possible only through the help and support from the Polyhedral
 ## Installing this pack
 > Currently, you are only able to use this on Bukkit. While you technically *could* install this on other platforms, you have no option to generate this in the Nether. If you want to use this pack on Fabric, Forge, or other supported platforms, and you don't mind having Nether terrain in the Overworld, feel free to use this pack.
 
-Simply install this pack like any other Terra generation pack. However, instead of specifying the pack to generate in `world`, you would put `world_nether` instead:
+Simply install this pack like any other Terra generation pack. Simply add these lines to the end of `Bukkit.yml`. However, rather than specifying the pack to generate in `world`, you would insert `world_nether`:
 
 ```
 worlds:
@@ -24,3 +24,12 @@ worlds:
 ```
 
 Obviously, if your Nether world name is named something different, you would rename it to that instead.
+
+## Biome List
+> Currently I haven't taken proper updated pictures of each biome yet, but I'm planning on making a list of all the biomes and some descriptions of them in the Wiki page of this repository.
+
+## Minor Pack Configuration
+> Again, this information will be presented in the Wiki page of this repository once I find the time to do so.
+
+## Bugs and Features
+If you find any bugs in this pack, feel free to report them in the Issues page! Likewise, if you have any feature requests such as biome additions, etc, feel free to post those as well!
