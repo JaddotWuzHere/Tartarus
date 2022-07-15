@@ -1,0 +1,10 @@
+if(getBlock(0, 1, 0) != "minecraft:nether_wart_block" && getBlock(0, 1, 0) != "minecraft:netherrack" && getBlock(0, 1, 0) != "minecraft:crimson_nylium") fail;
+if(getBlock(0, 0, 0) != "minecraft:air") fail;
+
+num vine_length = 0;
+
+for(num random = randomInt(12); vine_length < random + 1; vine_length = vine_length + 1) {
+	block(0, -(vine_length), 0, "minecraft:weeping_vines_plant", false);
+}
+
+block(0, -(vine_length), 0, "minecraft:weeping_vines", false);

@@ -1,0 +1,36 @@
+str blockID = getBlock(0,-1,0);
+if(blockID == "minecraft:air") fail; // Cancel gen if block beneath is air
+
+num lowestBlock_Y = 0;
+
+for(num increment = 0; increment < 255; increment = increment + 1) {
+	if(getBlock(0,increment,0) != "minecraft:air") {
+		lowestBlock_Y = increment;
+		break;
+	}
+}
+
+//lowestBlock_Y is the y value of the lowest block.
+//We can assume that the block at lowestBlock_Y is non-air.
+
+if(getBlock(0,lowestBlock_Y + 1,0) == "minecraft:air") {
+	fail;
+	//If the block above the lowest block is air, then cancel the gen.
+}
+
+else if(getBlock(1,lowestBlock_Y,0) == "minecraft:air" || getBlock(-1,lowestBlock_Y,0) == "minecraft:air" || getBlock(0,lowestBlock_Y,1) == "minecraft:air" || getBlock(0,lowestBlock_Y,-1) == "minecraft:air") {
+	fail;
+	//If the left block is air, or the front block is air, or the right block is air, or the back block is air, then cancel gen.
+}
+
+
+else if(getBlock(1,lowestBlock_Y,0) != "minecraft:air" && getBlock(-1,lowestBlock_Y,0) != "minecraft:air" && getBlock(0,lowestBlock_Y,1) != "minecraft:air" && getBlock(0,lowestBlock_Y,-1) != "minecraft:air") {
+	//If the left block is not air, and the front block is not air, and the right block is not air, and the back block is not air, place blocks defined below
+	for(num increment = 0; increment < lowestBlock_Y + 1; increment = increment + 1) {
+		block(0, increment, 0, "minecraft:budding_amethyst");
+		block(1, increment, 0, "minecraft:amethyst_cluster[facing=east]", false);
+		block(-1, increment, 0, "minecraft:amethyst_cluster[facing=west]", false);
+		block(0, increment, 1, "minecraft:amethyst_cluster[facing=south]", false);
+		block(0, increment, -1, "minecraft:amethyst_cluster[facing=north]", false);
+	}
+}

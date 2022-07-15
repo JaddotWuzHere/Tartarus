@@ -1,0 +1,7 @@
+if(getBlock(0, -1, 0) != "minecraft:warped_wart_block" && getBlock(0, -1, 0) != "minecraft:netherrack" && getBlock(0, -1, 0) != "minecraft:warped_nylium") fail;
+if(getBlock(0, 0, 0) != "minecraft:air") fail;
+
+num random = randomInt(2);
+
+if(random == 0) block(0, 0, 0, "minecraft:warped_roots", false);
+else if(random == 1) block(0, 0, 0, "minecraft:nether_sprouts", false);
