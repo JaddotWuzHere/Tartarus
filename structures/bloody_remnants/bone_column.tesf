@@ -1,0 +1,15 @@
+if(getBlock(0, -1, 0) != "minecraft:nether_wart_block" && getBlock(0, -1, 0) != "minecraft:netherrack" && getBlock(0, -1, 0) != "minecraft:crimson_nylium") fail;
+if(getBlock(0, 0, 0) != "minecraft:air" && getBlock(0, 0, 0) != "minecraft:lava") fail;
+
+num lowestBlock_Y = 0;
+
+for(num increment = 0; increment < 255; increment = increment + 1) {
+	if(getBlock(0,increment,0) != "minecraft:air" && getBlock(0,increment,0) != "minecraft:lava") {
+		lowestBlock_Y = increment;
+		break;
+	}
+}
+
+for(num increment = 0; increment < lowestBlock_Y + 1; increment = increment + 1) {
+	block(0, increment, 0, "minecraft:bone_block");
+}

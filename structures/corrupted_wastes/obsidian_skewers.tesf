@@ -1,0 +1,27 @@
+num skewerXPos = randomInt(4);
+num skewerZPos = randomInt(4);
+num skewerHeight = randomInt(5) + 5;
+
+if (getBlock(skewerXPos, -1, skewerZPos) == "minecraft:air" || getBlock(skewerXPos, -1, skewerZPos) == "minecraft:lava") fail;
+
+str obbyType = "ifuarereadingthishaveagoodday:)";
+
+for (num skewerYPos = 0; skewerYPos < skewerHeight; skewerYPos = skewerYPos + 1) {
+
+	num obbyRand = randomInt(4);
+	if (obbyRand == 0) obbyType = "minecraft:crying_obsidian";
+	else {
+		obbyType = "minecraft:obsidian";
+	}
+	
+	block(skewerXPos, skewerYPos, skewerZPos, obbyType);
+	
+}
+
+//Small skewers surrounding big skewer
+num skewerAmt = randomInt(7);
+
+for (num loopAmt = 0; loopAmt < skewerAmt; loopAmt = loopAmt + 1) {
+	num smolSkewerDeg = randomInt(36) * 10;
+	structure(1.8 * cos(smolSkewerDeg), 0, 1.8 * sin(smolSkewerDeg), "obsidian_skewers_small", "NONE");
+}

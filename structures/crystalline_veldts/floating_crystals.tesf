@@ -1,0 +1,14 @@
+str blockID = getBlock(0,-1,0);
+if(blockID != "minecraft:amethyst_block" && blockID != "minecraft:purple_stained_glass" && blockID != "minecraft:purple_concrete" && blockID != "minecraft:blue_concrete" && blockID != "minecraft:blue_terracotta" && blockID != "minecraft:blue_stained_glass" && blockID != "minecraft:light_blue_stained_glass" && blockID != "minecraft:light_blue_terracotta" && blockID != "mineacraft:light_blue_concrete") fail; // Cancel gen if block beneath is not one of the available blocks
+blockID = getBlock (0, 0, 0);
+if(blockID != "minecraft:air") fail; // Cancel gen if the block that's being generated is in another block
+
+num randomY = randomInt(30);
+
+if(getBlock(0,randomY+1,0) != "minecraft:air") fail;
+
+block(0, randomY + 1, 0, "minecraft:budding_amethyst");
+block(1, randomY + 1, 0, "minecraft:amethyst_cluster[facing=east]", false);
+block(-1, randomY + 1, 0, "minecraft:amethyst_cluster[facing=west]", false);
+block(0, randomY + 1, 1, "minecraft:amethyst_cluster[facing=south]", false);
+block(0, randomY + 1, -1, "minecraft:amethyst_cluster[facing=north]", false);

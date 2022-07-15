@@ -1,0 +1,22 @@
+block(0, 0, 1, "minecraft:basalt", true);
+block(1, 0, 0, "minecraft:basalt", true);
+block(-1, 0, 0, "minecraft:basalt", true);
+block(0, 0, -1, "minecraft:basalt", true);
+block(1, 0, 1, "minecraft:basalt", true);
+block(1, 0, -1, "minecraft:basalt", true);
+block(-1, 0, 1, "minecraft:basalt", true);
+block(-1, 0, -1, "minecraft:basalt", true);
+
+if(randomInt(2) == 0) block(0, 0, 2, "minecraft:basalt", true);
+if(randomInt(2) == 0) block(2, 0, 0, "minecraft:basalt", true);
+if(randomInt(2) == 0) block(-2, 0, 0, "minecraft:basalt", true);
+if(randomInt(2) == 0) block(0, 0, -2, "minecraft:basalt", true);
+
+if(randomInt(2) == 0) block(2, 0, 1, "minecraft:basalt", true);
+if(randomInt(2) == 0) block(1, 0, 2, "minecraft:basalt", true);
+if(randomInt(2) == 0) block(-1, 0, 2, "minecraft:basalt", true);
+if(randomInt(2) == 0) block(2, 0, -1, "minecraft:basalt", true);
+if(randomInt(2) == 0) block(1, 0, -2, "minecraft:basalt", true);
+if(randomInt(2) == 0) block(-2, 0, 1, "minecraft:basalt", true);
+if(randomInt(2) == 0) block(-1, 0, -2, "minecraft:basalt", true);
+if(randomInt(2) == 0) block(-2, 0, -1, "minecraft:basalt", true);
