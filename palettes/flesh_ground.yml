@@ -1,0 +1,20 @@
+id: FLESH_GROUND
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:nether_wart_block: 2
+      - minecraft:crimson_nylium: 2
+    layers: 1
+  - materials:
+      - minecraft:nether_wart_block: 2
+      - minecraft:netherrack: 2
+    layers: 2
+  - materials:
+      - minecraft:nether_wart_block: 1
+    layers: 1
+    
+sampler:
+  type: PERLIN
+  frequency: 0.08
+  salt: 9

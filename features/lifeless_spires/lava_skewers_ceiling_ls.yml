@@ -1,0 +1,28 @@
+id: LAVA_SKEWERS_CEILING_LS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 3498
+  threshold: 0.008
+
+locator:
+  type: PATTERN
+  range:
+    min: 32
+    max: 255
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_AIR
+        offset: 0
+      - type: MATCH_SOLID
+        offset: 1
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    - lava_skewer_finder: 1

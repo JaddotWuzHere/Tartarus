@@ -1,0 +1,18 @@
+id: SOUL_VALLEY
+type: BIOME
+extends: [ BASE, EQ_SOUL_VALLEY ]
+
+vanilla: minecraft:soul_sand_valley
+
+palette:
+  - SOUL_GROUND: 251
+  - << palettes/strata/strata.yml:palette
+  
+features:
+  landforms: 
+    - LAVA_COLUMN
+    - JUTTING_SPIKES_CEILING
+    - JUTTING_SPIKES_GROUND
+    - OBSIDIAN_SKEWERS
+  flora:
+    - SOUL_FIRE

@@ -1,0 +1,22 @@
+id: BLOODY_REMNANTS
+type: BIOME
+extends: [ BASE, EQ_STANDARD_NETHER ]
+
+vanilla: minecraft:crimson_forest
+
+palette:
+  - FLESH_GROUND: 251
+  - << palettes/strata/strata.yml:palette
+  
+features:
+  landforms: 
+    - LAVA_COLUMN
+    - BONE_COLUMN
+  trees:
+    - HEART_CAVITY
+    - TENDONS
+  flora:
+    - FIRE
+    - BLOODY_HAIRS
+    - DRIPPING_FUNGI
+    - DANGLING_FLESH

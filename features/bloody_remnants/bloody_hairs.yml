@@ -1,0 +1,21 @@
+id: BLOODY_HAIRS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 5052
+  threshold: 0.225
+
+locator:
+  type: SURFACE
+  range:
+    min: 32
+    max: 255
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    - bloody_hairs: 1

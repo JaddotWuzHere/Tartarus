@@ -1,0 +1,21 @@
+id: RED_NETHER_BRICK_PILLAR
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 5380
+  threshold: 0.0008
+
+locator:
+  type: SURFACE
+  range:
+    min: 32
+    max: 255
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    - red_nether_brick_pillar: 1

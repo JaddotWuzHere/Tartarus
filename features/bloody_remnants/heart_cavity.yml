@@ -1,0 +1,23 @@
+id: HEART_CAVITY
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 3498
+  threshold: 0.001
+
+locator:
+  type: GAUSSIAN_RANDOM
+  amount: 1
+  height:
+    min: 0
+    max: 255
+  standard-deviation: 8
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    - air_cavity: 1

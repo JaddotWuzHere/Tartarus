@@ -1,0 +1,21 @@
+id: WARPED_GROUND
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:warped_nylium: 3
+      - minecraft:netherrack: 1
+    layers: 1
+  - materials:
+      - minecraft:netherrack: 1
+    layers: 1
+    
+sampler:
+  dimensions: 2
+  type: DOMAIN_WARP
+  warp:
+    type: WHITE_NOISE
+  sampler:
+    type: CELLULAR
+    frequency: 0.1
+    return: CellValue

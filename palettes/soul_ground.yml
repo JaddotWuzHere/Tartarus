@@ -1,0 +1,31 @@
+id: SOUL_GROUND
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:soul_sand: 3
+      - minecraft:soul_soil: 1
+      - minecraft:soul_sand: 2
+      - minecraft:soul_soil: 4
+      - minecraft:soul_sand: 1
+      - minecraft:soul_soil: 2
+    layers: 2
+  - materials:
+      - minecraft:soul_soil: 4
+      - minecraft:soul_sand: 2
+      - minecraft:soul_soil: 3
+    layers: 8
+  - materials:
+      - minecraft:soul_sand: 2
+      - minecraft:soul_soil: 3
+      - minecraft:soul_sand: 4
+      - minecraft:soul_soil: 1
+      - minecraft:soul_sand: 2
+      - minecraft:soul_soil: 1
+    layers: 1
+    
+sampler:
+  dimensions: 2
+  type: OPEN_SIMPLEX_2
+  frequency: 0.05
+  salt: 4556

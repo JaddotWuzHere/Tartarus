@@ -1,0 +1,19 @@
+num skewerXPos = randomInt(3);
+num skewerZPos = randomInt(3);
+num skewerHeight = randomInt(3) + 1;
+
+if (getBlock(skewerXPos, -1, skewerZPos) == "minecraft:air" || getBlock(skewerXPos, -1, skewerZPos) == "minecraft:lava") fail;
+
+str obbyType = "goodmorning!orevening,idk";
+
+for (num skewerYPos = 0; skewerYPos < skewerHeight; skewerYPos = skewerYPos + 1) {
+
+	num obbyRand = randomInt(4);
+	if (obbyRand == 0) obbyType = "minecraft:crying_obsidian";
+	else {
+		obbyType = "minecraft:obsidian";
+	}
+	
+	block(skewerXPos, skewerYPos, skewerZPos, obbyType);
+	
+}

@@ -1,0 +1,32 @@
+id: BASALT_COLUMN_LAVA
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 7354
+  threshold: 0.001
+
+locator:
+  type: PATTERN
+  range:
+    min: 0
+    max: 32
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH
+        block: minecraft:lava
+        offset: 0
+      - type: MATCH_SET
+        offset: -1
+        blocks:
+          - minecraft:blackstone
+          - minecraft:smooth_basalt
+          - minecraft:basalt
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: basalt_column_lava

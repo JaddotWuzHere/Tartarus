@@ -1,0 +1,29 @@
+id: TENDONS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 2980
+  threshold: 0.006
+
+locator:
+  type: PATTERN
+  range:
+    min: 16
+    max: 255
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_SET
+        offset: 0
+        blocks:
+          - minecraft:air
+          - minecraft:lava
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    - tendon_base: 1

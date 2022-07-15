@@ -1,0 +1,32 @@
+id: JUTTING_SPIKES_GROUND
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 5475
+  threshold: 0.001
+
+locator:
+  type: PATTERN
+  range:
+    min: 32
+    max: 255
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_AIR
+        offset: 0
+      - type: MATCH_SET
+        blocks: 
+          - minecraft:soul_sand
+          - minecraft:soul_soil
+        offset: -1
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: 
+    jutting_bone_ground: 1
+    jutting_dripstone_ground: 2

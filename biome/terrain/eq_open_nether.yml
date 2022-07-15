@@ -1,0 +1,17 @@
+id: EQ_OPEN_NETHER
+type: BIOME
+abstract: true
+
+vars: &variables
+  base: 32
+
+terrain: 
+  sampler:
+    type: EXPRESSION
+    dimensions: 3
+    variables: *variables
+    expression: max(max(if(y, abs(y-64)/128 + simplex3(x, y, z)*5 - 1, 1), -((y / 28)^2) + 1 + simplex2(x, z)*1.25), -(((-((y / (255 - base))^2)) + 1) + |(simplex2(x, z) / 3)|))
+    
+  sampler-2d:
+    dimensions: 2
+    type: CONSTANT

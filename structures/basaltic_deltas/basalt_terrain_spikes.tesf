@@ -1,0 +1,9 @@
+if (getBlock(0, -1, 0) != "minecraft:blackstone" && getBlock(0, -1, 0) != "minecraft:smooth_basalt") fail;
+
+num spikeHeight = randomInt(8) + 1;
+
+for (num spikeY = 0; spikeY < spikeHeight; spikeY = spikeY + 1) {
+    block(0, spikeY, 0, "minecraft:basalt", false);
+}
+
+structure(0, 0, 1, "basalt_terrain_spikes", "NONE");

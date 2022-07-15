@@ -1,0 +1,35 @@
+id: MAGMA_LAVA
+type: FEATURE
+
+distributor:
+  type: "YES"
+
+locator:
+  type: AND
+  locators:
+    - type: PATTERN
+      range: &range
+        min: 32
+        max: 255
+      pattern:
+        type: MATCH
+        block: minecraft:magma_block
+        offset: 0
+    - type: ADJACENT_PATTERN
+      range: *range
+      match-all: true
+      pattern:
+        type: MATCH_SET
+        blocks: 
+          - minecraft:lava
+          - minecraft:magma_block
+          - minecraft:blackstone
+          - minecraft:smooth_basalt
+          - minecraft:basalt
+        offset: 0
+
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: BLOCK:minecraft:lava

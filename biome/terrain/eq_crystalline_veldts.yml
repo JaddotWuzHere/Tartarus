@@ -1,0 +1,41 @@
+id: EQ_CRYSTALLINE_VELDTS
+type: BIOME
+abstract: true
+
+vars: &variables
+  base: 32
+
+terrain: 
+  sampler:
+    type: EXPRESSION
+    dimensions: 3
+    variables: *variables
+    expression: |
+      max(
+      
+          //Nether sealed ground and lower terrain
+          max(
+          
+            //Generally flat lower ground
+            (-((y / 24)^2) + 1 + |(simplex2(x, z) / 2) + 0.1|),
+            
+            //CV terrain
+            stepLipped(-y + 64, 1/6, 96, 0, 0) + simplex2(x, z)*120
+            
+          ),
+          
+          //Nether sealed ground and higher terrain
+          max(
+          
+            //CV terrain upside down
+            -(stepLipped(-y + 228, 1/9, 196, 0, 0) + simplex2(x, z)*120),
+            
+            //Generally flat higher ground
+            -(-((y / 24)^2) + 108 + |(simplex2(x, z) / 2) + 0.1|)
+            
+          )
+      )
+            
+  sampler-2d:
+    dimensions: 2
+    type: CONSTANT

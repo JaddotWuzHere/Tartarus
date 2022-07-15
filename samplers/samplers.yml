@@ -1,0 +1,21 @@
+samplers:
+  simplex2:
+    dimensions: 2
+    type: FBM
+    octaves: 4
+    sampler:
+      type: OPEN_SIMPLEX_2
+      frequency: 0.0075
+  simplex3:
+    dimensions: 3
+    type: FBM
+    octaves: 4
+    sampler:
+      type: OPEN_SIMPLEX_2
+      frequency: 0.0075
+      
+  # trunk_noise_idk:
+    # dimensions: 3
+    # type: OPEN_SIMPLEX_2S
+    # octaves: 4
+    # frequency: 0.0075    

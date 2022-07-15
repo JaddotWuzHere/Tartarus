@@ -1,0 +1,58 @@
+id: CRYSTALLINE_GROUND
+type: PALETTE
+
+layers:
+  - materials:
+      - minecraft:blackstone: 20
+      - minecraft:amethyst_block: 2  
+      - minecraft:budding_amethyst: 2
+      - minecraft:amethyst_block: 2
+      - minecraft:blackstone: 20
+    layers: 1
+    sampler:
+      dimensions: 2
+      type: OPEN_SIMPLEX_2
+      frequency: 0.05
+      salt: 27
+  - materials:
+      - minecraft:blackstone: 8
+      - minecraft:amethyst_block: 2  
+      - minecraft:blackstone: 8
+    layers: 3
+    sampler:
+      dimensions: 2
+      type: OPEN_SIMPLEX_2
+      frequency: 0.08
+      salt: 20
+  - materials:
+      - minecraft:blackstone: 8
+      - minecraft:amethyst_block: 2  
+      - minecraft:blackstone: 8
+    layers: 3
+    sampler:
+      dimensions: 2
+      type: OPEN_SIMPLEX_2
+      frequency: 0.08
+      salt: 23
+  - materials:
+      - minecraft:blackstone: 8
+      - minecraft:amethyst_block: 2 
+      - minecraft:blackstone: 8
+    layers: 3
+    sampler:
+      dimensions: 2
+      type: OPEN_SIMPLEX_2
+      frequency: 0.08
+      salt: 24
+  - materials:
+      - minecraft:blackstone: 20
+      - minecraft:amethyst_block: 2  
+      - minecraft:budding_amethyst: 2
+      - minecraft:amethyst_block: 2
+      - minecraft:blackstone: 20
+    layers: 1
+    sampler:
+      dimensions: 2
+      type: OPEN_SIMPLEX_2
+      frequency: 0.05
+      salt: 27

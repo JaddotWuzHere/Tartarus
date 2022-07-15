@@ -1,0 +1,25 @@
+id: WASTING_GROUND
+type: PALETTE
+
+layers:
+  - materials:
+      - "minecraft:netherrack": 14
+      - "minecraft:magma_block": 1
+      - "minecraft:netherrack": 14
+    layers: 1
+  - materials:
+      - "minecraft:netherrack": 14
+      - "minecraft:magma_block": 1
+      - "minecraft:netherrack": 14
+    layers: 8
+  - materials: 
+      - "minecraft:netherrack": 10
+      - "minecraft:magma_block": 1
+      - "minecraft:netherrack": 10
+    layers: 1
+
+sampler:
+  dimensions: 2
+  type: OPEN_SIMPLEX_2S
+  frequency: 0.01
+  salt: 2908

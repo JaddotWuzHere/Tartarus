@@ -1,0 +1,21 @@
+id: FOUL_SHOOTS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 5380
+  threshold: 0.04
+
+locator:
+  type: SURFACE
+  range:
+    min: 32
+    max: 255
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    - foul_shoots: 1

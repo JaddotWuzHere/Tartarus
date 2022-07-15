@@ -1,0 +1,32 @@
+id: BASALT_COLUMN_DELTA
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 4687
+  threshold: 0.003
+
+locator:
+  type: PATTERN
+  range:
+    min: 32
+    max: 255
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH
+        block: minecraft:air
+        offset: 0
+      - type: MATCH_SET
+        offset: -1
+        blocks:
+          - minecraft:blackstone
+          - minecraft:smooth_basalt
+          - minecraft:basalt
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: basalt_column_delta

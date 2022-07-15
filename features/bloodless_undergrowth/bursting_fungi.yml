@@ -1,0 +1,30 @@
+id: BURSTING_FUNGI
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 7544
+  threshold: 0.0025
+
+locator:
+  type: PATTERN
+  range:
+    min: 40
+    max: 255
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_AIR
+        offset: 0
+      - type: MATCH_SET
+        offset: -1
+        blocks:
+          - minecraft:warped_nylium
+          - minecraft:warped_wart_block
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: BLOCK:minecraft:warped_fungus

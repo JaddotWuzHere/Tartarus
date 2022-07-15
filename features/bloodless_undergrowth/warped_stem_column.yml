@@ -1,0 +1,21 @@
+id: WARPED_STEM_COLUMN
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 2398
+  threshold: 0.0006
+
+locator:
+  type: SURFACE
+  range:
+    min: 32
+    max: 255
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures:
+    - warped_stem_column: 1

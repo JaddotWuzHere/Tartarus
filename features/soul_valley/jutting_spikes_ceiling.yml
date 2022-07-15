@@ -1,0 +1,32 @@
+id: JUTTING_SPIKES_CEILING
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 5457
+  threshold: 0.002
+
+locator:
+  type: PATTERN
+  range:
+    min: 52
+    max: 255
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_AIR
+        offset: 0
+      - type: MATCH_SET
+        blocks: 
+          - minecraft:soul_sand
+          - minecraft:soul_soil
+        offset: 1
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: 
+    jutting_bone_ceiling: 1
+    jutting_dripstone_ceiling: 2

@@ -1,0 +1,41 @@
+id: EQ_SOUL_VALLEY
+type: BIOME
+abstract: true
+
+vars: &variables
+  height: 60
+  blobStrength: 25
+
+terrain:
+  sampler:
+    dimensions: 3
+    type: EXPRESSION
+    expression: |
+      max(
+        max(
+          (-((y / 18)^2) + 1 + |(simplex2(x, z) / 2) + 0.1|),
+          max(
+            -y + 36 + (noise2(x, z)+0.25)*2 * height + (noise3(x, y*2, z)+0.25)*2 * blobStrength,
+            -(-y + 156 + (noise2(x, z)+0.25)*2 * height + (noise3(x, y*2, z)+0.25)*2 * blobStrength)
+          )
+        ),
+        
+        -((-((y / 24)^2) + 108 + |(simplex2(x*2, z*2) / 2) + 0.1|))
+      )
+    variables: *variables
+    samplers:
+      noise2:
+        dimensions: 2
+        type: FBM
+        octaves: 5
+        sampler:
+          type: OPEN_SIMPLEX_2
+          frequency: 0.005
+      noise3:
+        dimensions: 3
+        type: OPEN_SIMPLEX_2
+        frequency: 0.018
+            
+  sampler-2d:
+    dimensions: 2
+    type: CONSTANT

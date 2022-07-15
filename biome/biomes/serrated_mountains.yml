@@ -1,0 +1,20 @@
+id: SERRATED_MOUNTAINS
+type: BIOME
+extends: [ BASE, EQ_HELL_MOUNTAINS ]
+
+vanilla: minecraft:basalt_deltas
+
+palette:
+  - BASALTIC_GROUND: 251
+  - << palettes/strata/strata.yml:palette
+  
+features:
+  landforms: 
+    - BASALT_COLUMN_LAVA
+    - BASALT_TERRAIN_SPIKES_LAVA
+    - BASALT_TERRAIN_SPIKES
+    - GLOWSTONE_SPIKE
+  flora:
+    - LAVA_BLOCK
+    - MAGMA_LAVA
+    - LAVA_COLUMN

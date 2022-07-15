@@ -1,0 +1,15 @@
+num yCoord = 0;
+num xCoord = 0;
+num slope = randomInt(6) + 1;
+
+block(0, 0, 0, "minecraft:shroomlight");
+
+for(num x = 0; x < randomInt(8) + 6; x = x + 1) {
+	num y = slope * x;
+	if(getBlock(x, y, 1) != "minecraft:air" && getBlock(x, y, 0) != "minecraft:lava") fail;
+	for(num increment = 0; increment < slope; increment = increment + 1) {
+		block(x, increment + y, 1, "minecraft:warped_wart_block");
+	}
+	yCoord = y;
+	xCoord = x;
+}

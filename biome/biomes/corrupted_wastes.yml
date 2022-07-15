@@ -1,0 +1,21 @@
+id: CORRUPTED_WASTES
+type: BIOME
+extends: [ BASE, EQ_OPEN_NETHER ]
+
+vanilla: minecraft:nether_wastes
+
+palette:
+  - WASTING_GROUND: 251
+  - << palettes/strata/strata.yml:palette
+
+features:
+  landforms: 
+    - LAVA_COLUMN
+    - BASALT_COLUMN
+    - MAGMA_CLUSTER_CEILING
+    - MAGMA_CLUSTER_GROUND
+    - OBSIDIAN_SKEWERS
+    - OBSIDIAN_SKEWERS_LAVA
+    - GLOWSTONE_SPIKE
+  flora:
+    - FIRE

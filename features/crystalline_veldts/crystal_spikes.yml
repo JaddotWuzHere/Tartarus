@@ -1,0 +1,30 @@
+id: CRYSTAL_SPIKES
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 7958
+  threshold: 0.004
+
+locator:
+  type: AND
+  locators:
+    - type: SURFACE
+      range: &range
+        min: 32
+        max: 255
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:blackstone
+          - minecraft:budding_amethyst
+        offset: -2
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: crystal_spikes
