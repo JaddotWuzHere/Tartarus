@@ -1,0 +1,59 @@
+biomes: 
+  type: PIPELINE
+  resolution: 2
+  initial-size: 48
+  blend:
+    amplitude: 1
+    sampler:
+      type: GAUSSIAN
+  pipeline:
+    source:
+      type: SAMPLER
+      biomes:
+        - nether: 1
+      sampler:
+        dimensions: 2
+        type: CONSTANT
+    stages:
+      - type: REPLACE
+        from: nether
+        to:
+          - BASALTIC_DELTAS: 5
+          - BLOODLESS_UNDERGROWTH: 3
+          - BLOODY_REMNANTS: 3
+          - CORRUPTED_WASTES: 7
+          - CRIMSON_FOREST: 6
+          - CRYSTALLINE_VELDTS: 1
+          - FLAMING_HELLSCAPES: 5
+          - LIFELESS_SPIRES: 3
+          - SERRATED_MOUNTAINS: 4
+          - SOUL_VALLEY: 2
+          - TORRID_CRAGS: 4
+          - WARPED_FOREST: 6
+        sampler:
+          dimensions: 2
+          type: CELLULAR
+          return: CellValue
+          salt: 69420101
+          frequency: 0.03 / 1
+      - type: FRACTAL_EXPAND
+        sampler:
+          type: WHITE_NOISE
+      - type: FRACTAL_EXPAND
+        sampler:
+          type: WHITE_NOISE
+      - type: FRACTAL_EXPAND
+        sampler:
+          type: WHITE_NOISE
+      - type: SMOOTH
+        sampler:
+          type: WHITE_NOISE
+      - type: SMOOTH
+        sampler:
+          type: WHITE_NOISE
+      - type: SMOOTH
+        sampler:
+          type: WHITE_NOISE
+      - type: SMOOTH
+        sampler:
+          type: WHITE_NOISE

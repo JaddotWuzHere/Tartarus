@@ -1,0 +1,47 @@
+id: TARTARUS
+version: 0.1.0
+author: "Jaddot"
+
+generator: NOISE_3D
+
+addons:
+  biome-provider-pipeline: "0.1.+"
+  biome-provider-single: "0.1.+"
+  chunk-generator-noise-3d: "0.1.+"
+  config-biome: "0.1.+"
+  config-flora: "0.1.+"
+  config-noise-function: "0.1.+"
+  config-ore: "0.1.+"
+  config-palette: "0.1.+"
+  config-distributors: "0.1.+"
+  config-locators: "0.1.+"
+  config-feature: "0.1.+"
+  structure-terrascript-loader: "0.1.+"
+  structure-sponge-loader: "0.1.+"
+  language-yaml: "0.1.+"
+  generation-stage-feature: "0.1.+"
+  structure-function-check-noise-3d: "0.1.+"
+  palette-block-shortcut: "0.1.+"
+  structure-block-shortcut: "0.1.+"
+  terrascript-function-sampler: "0.1.+"
+    
+stages:
+  - id: landforms
+    type: FEATURE
+  - id: trees
+    type: FEATURE
+  - id: flora
+    type: FEATURE
+    
+biomes: $distribution.yml:biomes
+  
+functions:
+  "<<":
+    - functions/terrace.yml:functions
+    - functions/lerp.yml:functions
+    - functions/maskSmooth.yml:functions
+    - functions/stepLipped.yml:functions
+  
+samplers:
+  "<<":
+    - samplers/samplers.yml:samplers
