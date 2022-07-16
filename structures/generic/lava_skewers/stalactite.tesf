@@ -1,0 +1,35 @@
+num height = randomInt(4) + 1;
+
+bool doMerge = false;
+
+for(num i = 0; i > -height; i = i - 1) {
+    str blockID = getBlock(0,i,0);
+    if(blockID == "minecraft:pointed_dripstone") {
+        height = -i;
+        doMerge = true;
+    } else if(blockID != "minecraft:air") fail;
+}
+
+for(num i = 0; i > -height; i = i - 1) {
+    if(i == 0 && height > 2) {
+		if(getBlock(1,i+2,0) != "minecraft:air" && 
+		   getBlock(-1,i+2,0) != "minecraft:air" && 
+		   getBlock(0,i+2,1) != "minecraft:air" && 
+		   getBlock(0,i+2,-1) != "minecraft:air" && 
+			getBlock(1,i+2,0) != "minecraft:pointed_dripstone" && 
+		   getBlock(-1,i+2,0) != "minecraft:pointed_dripstone" && 
+		   getBlock(0,i+2,1) != "minecraft:pointed_dripstone" && 
+		   getBlock(0,i+2,-1) != "minecraft:pointed_dripstone") block(0,i+2,0,"minecraft:lava");
+		block(0,i,0,"minecraft:pointed_dripstone[vertical_direction=down,thickness=base]");
+	}
+    else if((i == -height+1) && doMerge) {
+        block(0,i,0,"minecraft:pointed_dripstone[vertical_direction=down,thickness=tip_merge]");
+        block(0,i-1,0,"minecraft:pointed_dripstone[vertical_direction=up,thickness=tip_merge]");
+    } else if(i == -height+1) {
+		block(0,i,0,"minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]");
+    } else if(i == -height+2) {
+		block(0,i,0,"minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]");
+    } else {
+		block(0,i,0,"minecraft:pointed_dripstone[vertical_direction=down,thickness=middle]");
+	}
+}

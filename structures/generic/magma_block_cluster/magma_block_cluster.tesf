@@ -1,0 +1,12 @@
+num width = randomInt(5)+1;
+num height = randomInt(3)+2;
+
+for(num x = -width; x <= width; x = x + 1) {
+    for(num z = -width; z <= width; z = z + 1) {
+        for(num y = -height; y <= height; y = y + 1) {
+            if(randomInt(2) == 0 && (getBlock(x,y,z) != "minecraft:air" && getBlock(x,y,z) != "minecraft:lava")) {
+                block(x,y,z,"minecraft:magma_block");
+            }
+        }
+    }
+}
