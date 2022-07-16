@@ -1,0 +1,27 @@
+id: SOUL_FIRE
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 7544
+  threshold: 0.01
+
+locator:
+  type: PATTERN
+  range:
+    min: 32
+    max: 255
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_AIR
+        offset: 0
+      - type: MATCH_SOLID
+        offset: -1
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: BLOCK:minecraft:soul_fire

@@ -1,0 +1,22 @@
+id: OBSIDIAN_SKEWERS
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 3582
+  threshold: 0.002
+
+locator:
+  type: SURFACE
+  range:
+    min: 34
+    max: 255
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: 
+    - obsidian_skewers: 15
+    - obsidian_skewers_huge: 1

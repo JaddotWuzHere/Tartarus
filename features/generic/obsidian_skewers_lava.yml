@@ -1,0 +1,24 @@
+id: OBSIDIAN_SKEWERS_LAVA
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 4785
+  threshold: 0.001
+
+locator:
+  type: PATTERN
+  range:
+    min: 0
+    max: 32
+  pattern:
+    type: MATCH
+    block: minecraft:netherrack
+    offset: -2
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: obsidian_skewers_huge

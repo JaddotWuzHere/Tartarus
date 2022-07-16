@@ -1,0 +1,30 @@
+id: GLOWSTONE_SPIKE
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 3868
+  threshold: 0.0015
+
+locator:
+  type: PATTERN
+  range:
+    min: 52
+    max: 255
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH_AIR
+        offset: 0
+      - type: MATCH_SET
+        blocks: 
+          - minecraft:netherrack
+          - minecraft:blackstone
+        offset: 1
+
+structures:
+  distribution:
+    type: WHITE_NOISE
+  structures: glowstone_spike
