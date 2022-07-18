@@ -11,7 +11,7 @@ Tartarus currently does not include any naturally generating ores and may contai
 
 > **THIS PACK DOES NOT WORK WITH STRUCTURES CURRENTLY**
 
-Due to some issues with vanilla Bukkit structure generation, vanilla structures do not generate in this pack. If you have `generate-structures` set to true in `server.properties`, your server will likely crash. This fix this, just disable structure generation. Hopefully in the future, custom structures will be available and Tartarus will be using that feature to generate structures instead.
+Due to some issues with vanilla Bukkit structure generation, vanilla structures do not generate in this pack. If you have `generate-structures` set to true in `server.properties`, your server will likely crash. This fix this, just disable structure generation. Hopefully in the future, custom structures will be available for Terra and Tartarus will be using that feature to generate structures instead.
 
 ## Credits
 Tartarus was made possible only through the help and support from the PolyhedralDev team, as well as the default Overworld config packaged with Terra, which some edited configs can be found in various assets in Tartarus. You can check out the pack here: https://github.com/PolyhedralDev/TerraOverworldConfig
