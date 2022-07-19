@@ -30,7 +30,7 @@ worlds:
 Obviously, if your Nether world name is named something different, you would rename it to that instead.
 
 ## Biome List
-> Currently I haven't taken proper updated pictures of each biome yet, but I'm planning on making a list of all the biomes and some descriptions of them in the Wiki page of this repository.
+> Currently I haven't taken proper updated pictures of each biome yet, but I'm planning on making a list of all the biomes and some descriptions of them in the Wiki of this repository.
 
 ## Minor Pack Configuration
 Options such as changing the biome sizes, changing the frequency of biomes and/or disabling them completely etc can be edited in `options.yml` of the pack. For more information, check out the Wiki page on how to do that [here](https://github.com/Jason-Ding19/Tartarus/wiki/Modifying-the-Config-Pack).
