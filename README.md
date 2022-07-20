@@ -18,6 +18,7 @@ Tartarus was made possible only through the help and support from the Polyhedral
 
 ## Biome List
 > The biome list is still work in progress, however the names of the biomes as well as a few screenshots with accompanying descriptions are available.
+
 A list of screenshots and descriptions of all the biomes included in this pack can be found on the Wiki of this repository.
 
 ## Installing this pack
