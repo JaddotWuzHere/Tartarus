@@ -16,6 +16,10 @@ Due to some issues with vanilla Bukkit structure generation, vanilla structures 
 ## Credits
 Tartarus was made possible only through the help and support from the PolyhedralDev team, as well as the default Overworld config packaged with Terra, which some edited configs can be found in various assets in Tartarus. You can check out the pack here: https://github.com/PolyhedralDev/TerraOverworldConfig
 
+## Biome List
+> The biome list is still work in progress, however the names of the biomes as well as a few screenshots with accompanying descriptions are available.
+A list of screenshots and descriptions of all the biomes included in this pack can be found on the Wiki of this repository.
+
 ## Installing this pack
 > Currently, you are only able to use this on Bukkit. While you technically *could* install this on other platforms, you have no option to generate this in the Nether. If you want to use this pack on Fabric, Forge, or other supported platforms, and you don't mind having Nether terrain in the Overworld, feel free to use this pack.
 
@@ -28,9 +32,6 @@ worlds:
 ```
 
 Obviously, if your Nether world name is named something different, you would rename it to that instead.
-
-## Biome List
-> Currently I haven't taken proper updated pictures of each biome yet, but I'm planning on making a list of all the biomes and some descriptions of them in the Wiki of this repository.
 
 ## Minor Pack Configuration
 Options such as changing the biome sizes, changing the frequency of biomes and/or disabling them completely etc can be edited in `options.yml` of the pack. For more information, check out the Wiki page on how to do that [here](https://github.com/Jason-Ding19/Tartarus/wiki/Modifying-the-Config-Pack).
