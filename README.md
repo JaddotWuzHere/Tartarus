@@ -24,7 +24,7 @@ A list of screenshots and descriptions of all the biomes included in this pack c
 ## Installing this pack
 > Currently, you are only able to use this on Bukkit. While you technically *could* install this on other platforms, you have no option to generate this in the Nether. If you want to use this pack on Fabric, Forge, or other supported platforms, and you don't mind having Nether terrain in the Overworld, feel free to use this pack.
 
-
+See how to install Tartarus [here](https://github.com/Jason-Ding19/Tartarus/wiki/Pack-Installation).
 
 ## Minor Pack Configuration
 Options such as changing the biome sizes, changing the frequency of biomes and/or disabling them completely etc can be edited in `options.yml` of the pack. For more information, check out the Wiki page on how to do that [here](https://github.com/Jason-Ding19/Tartarus/wiki/Modifying-the-Config-Pack).
