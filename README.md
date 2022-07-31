@@ -17,8 +17,6 @@ Due to some issues with vanilla Bukkit structure generation, vanilla structures 
 Tartarus was made possible only through the help and support from the PolyhedralDev team, as well as the default Overworld config packaged with Terra, which some edited configs can be found in various assets in Tartarus. You can check out the pack here: https://github.com/PolyhedralDev/TerraOverworldConfig
 
 ## Biome List
-> The biome list is still work in progress, however the names of the biomes as well as a few screenshots with accompanying descriptions are available.
-
 A list of screenshots and descriptions of all the biomes included in this pack can be found on the Wiki of this repository.
 
 ## Installing this pack
