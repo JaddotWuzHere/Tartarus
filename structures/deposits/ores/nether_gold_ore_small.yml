@@ -1,0 +1,5 @@
+id: NETHER_GOLD_ORE_SMALL
+type: ORE
+extends: NETHER_GOLD_ORE
+
+size: 4

@@ -12,6 +12,7 @@ features:
   landforms: 
     - LAVA_COLUMN
     - GLOWSTONE_SPIKE
+    - NETHER_FORTRESS_TOWERS
   trees:
     - HUGE_CRIMSON_FUNGUS
   flora:

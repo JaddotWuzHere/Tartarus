@@ -1,0 +1,5 @@
+num random = randomInt(4);
+if (random == 0) structure(0,0,0,"empty_room","NONE");
+if (random == 1) structure(0,0,0,"lava_room","NONE");
+if (random == 2) structure(0,0,0,"blaze_spawner_room","NONE");
+if (random == 3) structure(0,0,0,"nether_wart_room","NONE");

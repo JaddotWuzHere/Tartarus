@@ -1,0 +1,7 @@
+id: QUARTZ_ORE
+type: ORE
+extends: ABSTRACT_ORE
+
+material: minecraft:nether_quartz_ore
+
+size: 8

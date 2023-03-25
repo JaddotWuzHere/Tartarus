@@ -15,6 +15,7 @@ features:
     - LAVA_SKEWERS_GROUND
     - LAVA_SKEWERS_CEILING
     - GLOWSTONE_SPIKE
+    - NETHER_FORTRESS_TOWERS
   trees:
     - SKELETAL_TREES
   flora:

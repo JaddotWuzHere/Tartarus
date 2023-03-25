@@ -1,0 +1,5 @@
+id: QUARTZ_ORE_SMALL
+type: ORE
+extends: QUARTZ_ORE
+
+size: 4
