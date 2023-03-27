@@ -1,0 +1,5 @@
+id: QUARTZ_ORE_LARGE
+type: ORE
+extends: QUARTZ_ORE
+
+size: 12

@@ -1,0 +1,91 @@
+num width = 12;
+num height = 7;
+num length = 12;
+str setBlock = "minecraft:nether_bricks";
+
+for (num y = -1; y <= height; y = y + 1) {
+    for (num x = -length/2; x <= length/2; x = x + 1) {
+        for (num z = -width/2; z <= width/2; z = z + 1) {
+
+        // walls by length (x)
+            if ( (x == -length/2) || (x == length/2)) {
+                block(x,y,z,setBlock);
+            }
+
+        // walls by width (z)
+            if ((z == -width/2) || (z == width/2)) {
+                block(x,y,z,setBlock);
+            }
+
+
+
+       // roof
+            if ((y == height-1) && ((z < 4) || ((x > 3) && (z > 3) || ((x < -3) && (z > 3))))) {
+                block(x,y,z,setBlock);
+            }
+
+        // pillars
+            if ((x == 3 || x == -3) && (z == 3 || z == -3) && (y < height)) {
+                block(x,y,z,setBlock);
+            }
+            
+        // lava
+            if ((y == 1) &&
+            ((x < 3 && x > 0) || (x > -3 && x < 0)) &&
+            ((z < 3 && z > -3))) {
+                block(x,y,z,"minecraft:lava");
+            }
+
+        // soul sand rails
+            if ((y == 1) &&
+            (x == 3 || x == -3 || x == 0) &&
+            ((z < 3 && z > -3))) {
+                block(x,y,z,setBlock);
+            }
+
+            if ((y == 1) &&
+            (z == 3 || z == -3) &&
+            ((x < 3 && x > -3))) {
+                block(x,y,z,setBlock);
+            }
+
+        // nether brick windows
+            if ((y == 2 || y == 3) && 
+            ((x == 4) || (x == -4)) && 
+            ((z == 6) || (z == -6))) {
+                block(x,y,z,"minecraft:nether_brick_fence[east=true,west=true]");
+            }
+
+            if ((y == 2 || y == 3) && 
+            ((x == 2) || (x == -2)) && 
+            ((z == 6) || (z == -6))) {
+                block(x,y,z,"minecraft:nether_brick_fence[east=true,west=true]");
+            }
+
+            if ((y == 2 || y == 3) && 
+            ((z == 4) || (z == -4)) && 
+            ((x == 6) || (x == -6))) {
+                block(x,y,z,"minecraft:nether_brick_fence[north=true,south=true]");
+            }
+
+            if ((y == 2 || y == 3) && 
+            ((z == 2) || (z == -2)) && 
+            ((x == 6) || (x == -6))) {
+                block(x,y,z,"minecraft:nether_brick_fence[north=true,south=true]");
+            }
+        }
+    }
+}
+
+// stairs
+num j = 0;
+for (num i = (-length/2)+3; i <= (length/2)-3; i = i + 1) {
+    block(i,j,5,setBlock);
+    block(i,j,4,setBlock);
+    j = j+1;
+}
+
+
+
+
+

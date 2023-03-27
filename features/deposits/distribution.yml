@@ -1,0 +1,51 @@
+# ---
+# Definitions
+# ---
+#
+# averageCountPerChunk
+#  : On average many deposits appear within a single chunk / 16x16 grid of columns.
+#
+# salt
+#  : Adjusts the random seed for the placement of each deposit.
+#
+#  Every deposit should have a unique salt value, such that they all have unique distributions.
+#
+# range
+#  : Specifies the height range of deposits on the Y axis.
+#
+
+# To adjust the size of individual deposits, refer to the relevant
+# configs found in the /structures/deposits/ directory.
+
+# ---
+# Ore Veins
+# ---
+# The height ranges and count per chunk are defined to roughly match that of vanilla 1.18.
+
+# Ores prefixed with '-uniform' are uniformly distributed (Equal chance of generating across the specified Y range), otherwise
+# ores are normally distributed such that they are more common closer to the halfway point between the min and max.
+
+# For math nerds: Standard deviation is calculated via meta configuration based on min & max such that the majority (~99.7%)
+# of random heights calculated fit within said min & max. (This is calculated by simply dividing the distance between min and max by 6.)
+# This behaviour is configured within each individual ore FEATURE config.
+
+nether_gold:
+  averageCountPerChunk: 15
+  salt: 2438
+  range:
+    min: 10
+    max: 114
+
+quartz:
+  averageCountPerChunk: 12
+  salt: 8879
+  range:
+    min: 12
+    max: 80
+
+ancient_debris:
+  averageCountPerChunk: 1
+  salt: 6008
+  range:
+    min: 8
+    max: 22

@@ -1,6 +1,8 @@
 id: BASE
 type: BIOME
 abstract: true
+extends:
+  - ORES_DEFAULT
 
 ocean:
   palette: BLOCK:minecraft:lava

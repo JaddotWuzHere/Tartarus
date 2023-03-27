@@ -1,0 +1,46 @@
+id: NETHER_FORTRESS_TOWERS
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 100
+  padding: 120
+  salt: 8075
+
+locator:
+  type: AND
+  locators:
+    - type: RANDOM
+      amount: 5
+      salt: 3657
+      height: &range
+        min: 10
+        max: 235
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SOLID
+        offset: -30
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        offset: 0
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        blocks:
+        offset: 7
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_AIR
+        blocks:
+        offset: 14
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: 
+    - nether_fortress_tower: 1

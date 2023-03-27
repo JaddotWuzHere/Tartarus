@@ -1,0 +1,9 @@
+id: ORES_DEFAULT
+type: BIOME
+abstract: true
+
+features:
+  ores:
+    - NETHER_GOLD_ORE
+    - QUARTZ_ORE
+    - ANCIENT_DEBRIS

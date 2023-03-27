@@ -1,0 +1,6 @@
+id: ABSTRACT_ORE
+type: ORE
+abstract: true
+
+replace:
+  - minecraft:netherrack

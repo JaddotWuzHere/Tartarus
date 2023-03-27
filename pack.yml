@@ -1,5 +1,5 @@
 id: TARTARUS
-version: 0.1.0
+version: 0.5.0
 author: "Jaddot"
 
 generator: NOISE_3D
@@ -31,6 +31,8 @@ stages:
   - id: trees
     type: FEATURE
   - id: flora
+    type: FEATURE
+  - id: ores
     type: FEATURE
     
 biomes: $distribution.yml:biomes

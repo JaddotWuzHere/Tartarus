@@ -17,5 +17,6 @@ features:
     - OBSIDIAN_SKEWERS
     - OBSIDIAN_SKEWERS_LAVA
     - GLOWSTONE_SPIKE
+    - NETHER_FORTRESS_TOWERS
   flora:
     - FIRE

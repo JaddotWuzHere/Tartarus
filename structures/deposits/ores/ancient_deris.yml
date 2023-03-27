@@ -1,0 +1,10 @@
+id: ANCIENT_DEBRIS
+type: ORE
+replace:
+  - minecraft:netherrack
+  - minecraft:basalt
+  - minecraft:blackstone
+
+material: minecraft:ancient_debris
+
+size: 4

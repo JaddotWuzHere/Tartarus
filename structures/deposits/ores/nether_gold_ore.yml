@@ -1,0 +1,7 @@
+id: NETHER_GOLD_ORE
+type: ORE
+extends: ABSTRACT_ORE
+
+material: minecraft:nether_gold_ore
+
+size: 8
