@@ -5,9 +5,11 @@ A Minecraft Terra generation pack that adds a ton of new biomes to the Nether!
 
 Tartarus is a Terra world generation pack for Minecraft Java v1.19 that adds 12 custom biomes to the Nether! This includes vanilla biomes, however these biomes have been reworked to fit the scheme of this pack better. 
 
-Structure generation consists of Nether Fortresses and Bastion Remnants just like vanilla.
+## Structure Generation
+Nether Fortresses and Bastion Remnants just like vanilla.
 
-Ore generation consists of Nether Gold, Quartz, and Ancient Debris that generate similar to vanilla nether ore generation.
+## Ore Generation
+Nether Gold, Quartz, and Ancient Debris that generate similar to vanilla nether ore generation.
 
 ## Credits
 Tartarus was made possible only through the help and support from the PolyhedralDev team, as well as the default Overworld config packaged with Terra, which some edited configs can be found in various assets in Tartarus. You can check out the pack here: https://github.com/PolyhedralDev/TerraOverworldConfig
