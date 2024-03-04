@@ -5,13 +5,9 @@ A Minecraft Terra generation pack that adds a ton of new biomes to the Nether!
 
 Tartarus is a Terra world generation pack for Minecraft Java v1.19 that adds 12 custom biomes to the Nether! This includes vanilla biomes, however these biomes have been reworked to fit the scheme of this pack better. 
 
-> **THIS PACK IS STILL WORK IN PROGRESS AND SHOULD NOT BE USED IN PRODUCTION YET**
+Structure generation consists of Nether Fortresses and Bastion Remnants just like vanilla.
 
-Tartarus currently does not include any naturally generating ores and may contain bugs. As long as this warning is still here, this pack is not completed yet.
-
-> **THIS PACK DOES NOT WORK WITH STRUCTURES CURRENTLY**
-
-Due to some issues with vanilla Bukkit structure generation, vanilla structures do not generate in this pack. If you have `generate-structures` set to true in `server.properties`, your server will likely crash. This fix this, just disable structure generation. Hopefully in the future, custom structures will be available for Terra and Tartarus will be using that feature to generate structures instead.
+Ore generation consists of Nether Gold, Quartz, and Ancient Debris that generate similar to vanilla nether ore generation.
 
 ## Credits
 Tartarus was made possible only through the help and support from the PolyhedralDev team, as well as the default Overworld config packaged with Terra, which some edited configs can be found in various assets in Tartarus. You can check out the pack here: https://github.com/PolyhedralDev/TerraOverworldConfig
@@ -23,6 +19,14 @@ A list of screenshots and descriptions of all the biomes included in this pack c
 > Currently, you are only able to use this on Bukkit. While you technically *could* install this on other platforms, you have no option to generate this in the Nether. If you want to use this pack on Fabric, Forge, or other supported platforms, and you don't mind having Nether terrain in the Overworld, feel free to use this pack.
 
 See how to install Tartarus [here](https://github.com/Jason-Ding19/Tartarus/wiki/Pack-Installation).
+
+#### Bukkit.yml Quick Reference 
+##### Affects just the Vanilla Nether Dimension
+```
+worlds:
+  world_nether:
+    generator: Terra:TARTARUS
+```
 
 ## Minor Pack Configuration
 Options such as changing the biome sizes, changing the frequency of biomes and/or disabling them completely etc can be edited in `options.yml` of the pack. For more information, check out the Wiki page on how to do that [here](https://github.com/Jason-Ding19/Tartarus/wiki/Modifying-the-Config-Pack).
