@@ -12,7 +12,6 @@ features:
   landforms: 
     - LAVA_COLUMN
     - BONE_COLUMN
-    - NETHER_FORTRESS_TOWERS
   trees:
     - HEART_CAVITY
     - TENDONS
