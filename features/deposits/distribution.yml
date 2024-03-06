@@ -30,21 +30,21 @@
 # This behaviour is configured within each individual ore FEATURE config.
 
 nether_gold:
-  averageCountPerChunk: 15
+  averageCountPerChunk: 24
   salt: 2438
   range:
-    min: 10
+    min: 8
     max: 114
 
 quartz:
-  averageCountPerChunk: 12
+  averageCountPerChunk: 18
   salt: 8879
   range:
-    min: 12
+    min: 8
     max: 80
 
 ancient_debris:
-  averageCountPerChunk: 1
+  averageCountPerChunk: 1/2
   salt: 6008
   range:
     min: 8
