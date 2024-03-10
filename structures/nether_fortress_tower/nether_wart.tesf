@@ -1,3 +1,0 @@
-num age = randomInt(4);
-str setBlock = "minecraft:nether_wart[age=";
-block(0,0,0,setBlock+age+"]");

@@ -13,7 +13,6 @@ features:
     - LAVA_COLUMN
     - WARPED_STEM_COLUMN
     - GLOWSTONE_SPIKE
-    - NETHER_FORTRESS_TOWERS
   trees:
     - TENTACLES
   flora:
